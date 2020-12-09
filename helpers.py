@@ -1,11 +1,11 @@
 from PIL import Image, ImageOps
 
-def loadImageAsPixels(path):
+def loadImage(path):
     image = Image.open(path, 'r')
-    pixels = image.getdata()
-    grayvalues = (ImageOps.grayscale(image).getdata())
+    return image, image.width, image.height
 
-    return pixels, grayvalues, image, image.width, image.height
+def grayvalues(image):
+    return ImageOps.grayscale(image).getdata()
 
 def selectPixels(grayvaluesA, grayvaluesB, width, height, limit):
     selectedPixels = []
