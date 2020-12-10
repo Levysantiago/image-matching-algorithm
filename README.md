@@ -12,6 +12,38 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 - Marcos Pinheiro
 - Rita Barreto
 
+## Getting Started
+
+### Versões
+
+- Python 3.5.2
+
+### Dependências
+
+Se você não tiver a biblioteca Pillow instalada, para instalar você pode utilizar os seguintes comandos:
+
+```
+$ pip install Pillow
+```
+
+`Caso seu python3 não seja o padrão, pode ser que você precise usar pip3.`
+
+Mais informações aqui na [documentação da biblioteca](https://pillow.readthedocs.io/en/3.0.x/installation.html).
+
+### Rodando algoritmo
+
+O arquivo principal é o `main.py` que, por sua vez, irá chamar o algoritmo `lr2Matching.py`. Para iniciar o primeiro teste, basta rodar o comando:
+
+```
+$ python main.py
+```
+
+ou
+
+```
+$ python3 main.py
+```
+
 ## Conhecimentos
 
 ### Livros
