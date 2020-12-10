@@ -12,6 +12,10 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 
 - Python 3.5.2 (esta foi a versão utilizada, mas funciona para outras versões também)
 
+### Organização
+
+Os principais arquivos encontram-se na pasta _root_ (`main.py`, `lr2Matching.py`, `helpers.py`). Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo.
+
 ### Dependências
 
 Se você não tiver a biblioteca **Pillow** instalada, para instalar você pode utilizar os seguintes comandos:
