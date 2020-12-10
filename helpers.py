@@ -25,8 +25,8 @@ def selectPixelsBy(mapA, ipA, ipB, width):
     mapB = [ipB]
     for p in mapA:
         if(p != ipA):
-            i = ipB[0][0] + abs(ipA[0][0] - p[0][0])
-            j = ipB[0][1] + abs(ipA[0][1] - p[0][1])
+            i = ipB[0][0] + (p[0][0] - ipA[0][0])
+            j = ipB[0][1] + (p[0][1] - ipA[0][1])
             # Invertido, pois os pixels da imagem são organizados de maneira invertida
             goTo = [(j,i), ipB[1] + abs(ipA[1] - p[1])]
             if(i < width and j < width):
