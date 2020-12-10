@@ -18,7 +18,8 @@ Os principais arquivos encontram-se na pasta _root_. O `main.py` abre as imagens
 
 ```text
 assets/
-    image.png
+    apple.jpg
+    apple2.jpg
     ...
 main.py
 lrMatching.py
