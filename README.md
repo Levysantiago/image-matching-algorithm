@@ -14,19 +14,28 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 
 ### Organização
 
-Os principais arquivos encontram-se na pasta _root_ (`main.py`, `lr2Matching.py`, `helpers.py`). Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo.
+Os principais arquivos encontram-se na pasta _root_. O `main.py` abre as imagens para dar como entrada ao algoritmo `lr2Matching.py`, que irá tentar encontrar correspondências entre as imagens. `helpers.py` contém diversas funções implementadas para serem utilizadas pelo algoritmo. Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo.
+
+```text
+assets/
+    image.png
+    ...
+main.py
+lrMatching.py
+helpers.py
+```
 
 ### Dependências
 
 Se você não tiver a biblioteca **Pillow** instalada, para instalar você pode utilizar os seguintes comandos:
 
-```
+```bash
 $ pip install Pillow
 ```
 
 `Caso seu python3 não seja o padrão, pode ser que você precise usar pip3.`
 
-```
+```bash
 $ pip3 install Pillow
 ```
 
@@ -36,13 +45,13 @@ Mais informações aqui na [documentação da biblioteca](https://pillow.readthe
 
 O arquivo principal é o `main.py` que, por sua vez, irá chamar o algoritmo `lr2Matching.py`. Para iniciar o primeiro teste, basta rodar o comando:
 
-```
+```bash
 $ python main.py
 ```
 
 ou
 
-```
+```bash
 $ python3 main.py
 ```
 
