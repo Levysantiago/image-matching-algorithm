@@ -45,7 +45,7 @@ $ python3 main.py
 ## Autores
 
 - [Levy Santiago](https://github.com/Levysantiago)
-- Marcos Pinheiro
+- [Marcos Pinheiro](https://github.com/Mrpsousa)
 - Rita Barreto
 
 ## Conhecimentos
