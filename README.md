@@ -10,17 +10,21 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 
 ### Versões
 
-- Python 3.5.2
+- Python 3.5.2 (esta foi a versão utilizada, mas funciona para outras versões também)
 
 ### Dependências
 
-Se você não tiver a biblioteca Pillow instalada, para instalar você pode utilizar os seguintes comandos:
+Se você não tiver a biblioteca **Pillow** instalada, para instalar você pode utilizar os seguintes comandos:
 
 ```
 $ pip install Pillow
 ```
 
 `Caso seu python3 não seja o padrão, pode ser que você precise usar pip3.`
+
+```
+$ pip3 install Pillow
+```
 
 Mais informações aqui na [documentação da biblioteca](https://pillow.readthedocs.io/en/3.0.x/installation.html).
 
