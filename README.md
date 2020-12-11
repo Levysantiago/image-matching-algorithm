@@ -10,7 +10,7 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 
 ### Versões
 
-- Python 3.5.2 (esta foi a versão utilizada, mas funciona para outras versões também)
+- Python 3.6.12 (esta foi a versão utilizada, mas funciona para outras versões também)
 
 ### Organização
 
@@ -31,16 +31,38 @@ helpers.py
 Se você não tiver a biblioteca **Pillow** instalada, para instalar você pode utilizar os seguintes comandos:
 
 ```bash
-$ pip install Pillow
+$ pip install Pillow --user
 ```
 
-`Caso seu python3 não seja o padrão, pode ser que você precise usar pip3.`
+`Caso seu python3 não seja o padrão, pode ser que você precise usar pip3 ou pip3.6`
 
 ```bash
-$ pip3 install Pillow
+$ pip3 install Pillow --user
 ```
 
 Mais informações aqui na [documentação da biblioteca](https://pillow.readthedocs.io/en/3.0.x/installation.html).
+
+#### SIFT
+
+Para rodar o SIFT foi necessário utilizar o python 3.6 e algumas exatas versões de alguns pacotes.
+
+```bash
+$ pip3.6 install opencv-python==3.4.2.16
+```
+
+```bash
+$ pip3.6 install opencv-contrib-python==3.4.2.16
+```
+
+```bash
+$ sudo apt-get install python3.6-tk
+```
+
+```bash
+$ pip3.6 install matplotlib
+```
+
+O código do algoritmo SIFT foi obtido através do site: https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python/, aqui o funcionamento do algoritmo é explicado brevemente.
 
 ### Rodando algoritmo
 

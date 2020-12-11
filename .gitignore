@@ -1,3 +1,4 @@
 __pycache__/
 old/
 *.old.py
+tests/*.jpg

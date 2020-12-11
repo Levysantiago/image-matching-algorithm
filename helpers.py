@@ -7,6 +7,9 @@ def loadImage(path):
 def grayvalues(image):
     return ImageOps.grayscale(image).getdata()
 
+def pixels(image):
+    return image.getdata()
+
 def selectPixels(grayvaluesA, grayvaluesB, width, height, limit):
     selectedPixels = []
     counter = 0
@@ -19,7 +22,23 @@ def selectPixels(grayvaluesA, grayvaluesB, width, height, limit):
                 initialB = [(i,j), counter]
             counter += 1
     initialA = selectedPixels[0]
-    return selectedPixels, initialA, initialB, 
+    return selectedPixels, initialA, initialB
+
+def selectPixelsRGB(pixelsA, pixelsB, width, height, limit):
+    selectedPixels = []
+    counter = 0
+    initialB = None
+    for i in range(width):
+        for j in range(height):
+            mean = (pixelsA[counter][0] + pixelsA[counter][1] + pixelsA[counter][2] / 3)
+            if(mean < limit):
+                selectedPixels.append([(i,j), counter])
+            meanB = (pixelsB[counter][0] + pixelsB[counter][1] + pixelsB[counter][2] / 3)
+            if(not initialB and meanB < limit):
+                initialB = [(i,j), counter]
+            counter += 1
+    initialA = selectedPixels[0]
+    return selectedPixels, initialA, initialB
 
 def selectPixelsBy(mapA, ipA, ipB, width):
     mapB = [ipB]
@@ -33,11 +52,24 @@ def selectPixelsBy(mapA, ipA, ipB, width):
                 mapB.append(goTo)
     return mapB
 
-def highlightPixels(A, B, mapA, mapB, gvA, gvB, limit, showImage):
+def highlightPixels(A, B, mapA, mapB, gvA, gvB, limit):
     colorIt = []
+    C = Image.open(B.filename)
     for i in range(len(mapB)):
         if(abs(gvA[mapA[i][1]] - gvB[mapB[i][1]]) < limit):
             colorIt.append(mapB[i])
-            B.putpixel(mapB[i][0], 0)
-    if(showImage):
-        B.show()
+            C.putpixel(mapB[i][0], 255)
+    return C
+
+def highlightPixelsRGB(A, B, mapA, mapB, pixelsA, pixelsB, limit):
+    colorIt = []
+    # C = Image.new('RGB', (200,200))
+    C = Image.open(B.filename)
+    for i in range(len(mapB)):
+        # print(selectedPixels2[i])
+        mean = (pixelsA[mapA[i][1]][0] + pixelsA[mapA[i][1]][1] +pixelsA[mapA[i][1]][2] / 3)
+        mean2 = (pixelsB[mapB[i][1]][0] + pixelsB[mapB[i][1]][1] +pixelsB[mapB[i][1]][2] / 3)
+        if(mean - mean2 < limit ):
+            colorIt.append(mapB[i])
+            C.putpixel((mapB[i][0]), 255)
+    return C
