@@ -2,6 +2,20 @@
 
 Este repositório foi criado com o intuito de realizar uma nova implementação para resolver o problema do _Image Matching_, um problema NP-Completo. Abaixo é apresentado um breve resumo do que é o problema em si, para informações mais aprofundadas, verificar o [docs/RelatorioParcial.pdf](https://github.com/Levysantiago/image-matching-algorithm/tree/master/docs/RelatorioParcial.pdf).
 
+# Sumário
+
+- [Image Matching (IM)](<#image-matching-(im)>)
+- [Getting Started](#getting-started)
+  - [Versões](#versoes)
+  - [Organização](#organizacao)
+  - [Dependências](#dependencias)
+    - [SIFT](#sift)
+  - [Executando os algoritmos](#executtando-os-algoritmos)
+- [Autores](#autores)
+- [Conhecimentos](#conhecimentos)
+  - [Livros](#livros)
+  - [Artigos](#artigos)
+
 ## Image Matching (IM)
 
 O problema do IM ou Correspondência de Imagem tem sido abordado por diversos autores, a fim de buscar melhores técnicas para uma solução mais rápida e precisa. O problema consiste em analisar duas imagens A e B, onde B é uma transformação geométrica de A. O resultado desta análise deve ser o encontro de características semelhantes entre elas, de forma que, no final, estas correspondências sejam realçadas e apresentadas para facilitar uma determinada investigação. O IM é um componente chave para diversos processos de análise de imagens e é muito importante para inúmeras aplicações, como navegação, orientação, vigilância automática, fotogrametria e visão robótica. Na medicina, por exemplo, é de grande importância para encontrar relações entre diferenças no posicionamento do paciente, modalidades e aquisição de imagens variadas.
@@ -14,12 +28,17 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 
 ### Organização
 
-Os principais arquivos encontram-se na pasta _root_. O `main.py` abre as imagens para dar como entrada ao algoritmo `lr2Matching.py`, que irá tentar encontrar correspondências entre as imagens. `helpers.py` contém diversas funções implementadas para serem utilizadas pelo algoritmo. Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo.
+Os principais arquivos encontram-se na pasta _root_. O `main.py` abre as imagens para dar como entrada ao algoritmo `lr2Matching.py`, que irá tentar encontrar correspondências entre as imagens. `helpers.py` contém diversas funções implementadas para serem utilizadas pelo algoritmo. Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo. A pasta `graph` contém o gráfico comparativo gerado pelo algoritmo depois de rodar a `main.py`. A pasta `tests` irá conter todos os resultados das correlações em imagens gerados pelos algoritmos para cada caso de teste.
 
 ```text
 assets/
     apple.jpg
     apple2.jpg
+    ...
+graph/
+    comparison.png
+tests/
+    .gitkeep
     ...
 main.py
 lrMatching.py
@@ -64,7 +83,7 @@ $ pip3.6 install matplotlib
 
 O código do algoritmo SIFT foi obtido através do site: https://www.analyticsvidhya.com/blog/2019/10/detailed-guide-powerful-sift-technique-image-matching-python/, aqui o funcionamento do algoritmo é explicado brevemente.
 
-### Rodando algoritmo
+### Executando os algoritmos
 
 O arquivo principal é o `main.py` que, por sua vez, irá chamar o algoritmo `lr2Matching.py`. Para iniciar o primeiro teste, basta rodar o comando:
 
@@ -75,8 +94,10 @@ $ python main.py
 ou
 
 ```bash
-$ python3 main.py
+$ python3.6 main.py
 ```
+
+Ao rodar o algoritmo, ele irá ridar as três implementações e gerar os resultados das correlações em imagens na pasta `tests`, também irá gerar um gráfico comparativo na pasta `graph/` em relação ao tempo de execução que cada algoritmo levou para resolver o problema.
 
 ## Autores
 
