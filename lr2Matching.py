@@ -12,11 +12,11 @@ def lr2Matching(A, B):
 def lr2MatchingRGB(A, B):
     width = A.width
     height = A.height
-    gvA = pixels(A)
-    gvB = pixels(B)
-    mapA, ipA, ipB = selectPixelsRGB(gvA, gvB, width, height, 300)
+    pixelsA = pixels(A)
+    pixelsB = pixels(B)
+    mapA, ipA, ipB = selectPixelsRGB(pixelsA, pixelsB, width, height, 300)
     mapB = selectPixelsBy(mapA, ipA, ipB, width)
-    return highlightPixelsRGB(A, B, mapA, mapB, gvA, gvB, 150)
+    return highlightPixelsRGB(A, B, mapA, mapB, pixelsA, pixelsB, 150)
 
 def showImage(image):
     image.show()

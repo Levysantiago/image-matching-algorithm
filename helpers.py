@@ -55,7 +55,8 @@ def selectPixelsBy(mapA, ipA, ipB, width):
 def highlightPixels(A, B, mapA, mapB, gvA, gvB, limit):
     colorIt = []
     C = Image.open(B.filename)
-    for i in range(len(mapB)):
+    size = len(mapB)
+    for i in range(size):
         if(abs(gvA[mapA[i][1]] - gvB[mapB[i][1]]) < limit):
             colorIt.append(mapB[i])
             C.putpixel(mapB[i][0], 255)
@@ -65,11 +66,12 @@ def highlightPixelsRGB(A, B, mapA, mapB, pixelsA, pixelsB, limit):
     colorIt = []
     # C = Image.new('RGB', (200,200))
     C = Image.open(B.filename)
-    for i in range(len(mapB)):
+    size = len(mapB)
+    for i in range(size):
         # print(selectedPixels2[i])
         mean = (pixelsA[mapA[i][1]][0] + pixelsA[mapA[i][1]][1] +pixelsA[mapA[i][1]][2] / 3)
         mean2 = (pixelsB[mapB[i][1]][0] + pixelsB[mapB[i][1]][1] +pixelsB[mapB[i][1]][2] / 3)
-        if(mean - mean2 < limit ):
+        if(abs(mean - mean2) < limit ):
             colorIt.append(mapB[i])
             C.putpixel((mapB[i][0]), 255)
     return C
