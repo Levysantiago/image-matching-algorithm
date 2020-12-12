@@ -66,4 +66,4 @@ print(lr2m_times)
 print(lr2mRGB_times)
 print(SIFT_times)
 
-plot.plot_graph(lr2m_times, lr2m_times, SIFT_times, len(lr2m_times))
+plot.plot_graph(lr2m_times, lr2mRGB_times, SIFT_times, len(lr2m_times))
