@@ -4,13 +4,13 @@ Este repositório foi criado com o intuito de realizar uma nova implementação 
 
 # Sumário
 
-- [Image Matching (IM)](<#image-matching-(im)>)
+- [Image Matching (IM)](#image-matching-im)
 - [Getting Started](#getting-started)
-  - [Versões](#versoes)
-  - [Organização](#organizacao)
-  - [Dependências](#dependencias)
+  - [Versões](#versões)
+  - [Organização](#organização)
+  - [Dependências](#dependências)
     - [SIFT](#sift)
-  - [Executando os algoritmos](#executtando-os-algoritmos)
+  - [Executando os algoritmos](#executando-os-algoritmos)
 - [Autores](#autores)
 - [Conhecimentos](#conhecimentos)
   - [Livros](#livros)
