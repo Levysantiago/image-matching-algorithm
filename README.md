@@ -128,7 +128,7 @@ Lembrando que as imagens precisam ser de mesmo tamanho e que devem ser quadradas
 
 - [Levy Santiago](https://github.com/Levysantiago)
 - [Marcos Pinheiro](https://github.com/Mrpsousa)
-- Rita Barreto
+- [Rita Barreto](https://github.com/RCNB)
 
 ## Conhecimentos
 
