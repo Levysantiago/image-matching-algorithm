@@ -28,13 +28,16 @@ O problema do IM ou Correspondência de Imagem tem sido abordado por diversos au
 
 ### Organização
 
-Os principais arquivos encontram-se na pasta _root_. O `main.py` abre as imagens para dar como entrada ao algoritmo `lr2Matching.py`, que irá tentar encontrar correspondências entre as imagens. `helpers.py` contém diversas funções implementadas para serem utilizadas pelo algoritmo. Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo. A pasta `graph` contém o gráfico comparativo gerado pelo algoritmo depois de rodar a `main.py`. A pasta `tests` irá conter todos os resultados das correlações em imagens gerados pelos algoritmos para cada caso de teste.
+Os principais arquivos encontram-se na pasta _root_. O `main.py` abre as imagens para dar como entrada ao algoritmo `lr2Matching.py`, que irá tentar encontrar correspondências entre as imagens. `helpers.py` contém diversas funções implementadas para serem utilizadas pelo algoritmo. Na pasta `assets`, são organizadas todas as imagens que podem ser utilizadas como entrada do algoritmo. A pasta `docs` contém os relatórios com uma explicação melhor do problema em si e da proposta deste trabalho. A pasta `graph` contém o gráfico comparativo gerado pelo algoritmo depois de rodar a `main.py`. A pasta `tests` irá conter todos os resultados das correlações em imagens gerados pelos algoritmos para cada caso de teste.
 
 ```text
 assets/
     apple.jpg
     apple2.jpg
     ...
+docs/
+    RelatorioParcial.pdf
+    RelatorioFinal.pdf
 graph/
     comparison.png
 tests/
