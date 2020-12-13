@@ -2,7 +2,7 @@
 
 Este repositório foi criado com o intuito de realizar uma nova implementação para resolver o problema do _Image Matching_, um problema NP-Completo. Abaixo é apresentado um breve resumo do que é o problema em si, para informações mais aprofundadas, verificar o [docs/RelatorioParcial.pdf](https://github.com/Levysantiago/image-matching-algorithm/tree/master/docs/RelatorioParcial.pdf).
 
-# Sumário
+## Sumário
 
 - [Image Matching (IM)](#image-matching-im)
 - [Getting Started](#getting-started)
@@ -63,7 +63,7 @@ Mais informações aqui na [documentação da biblioteca](https://pillow.readthe
 
 #### SIFT
 
-Para rodar o SIFT foi necessário utilizar o python 3.6 e algumas exatas versões de alguns pacotes.
+Para rodar o SIFT foi necessário utilizar algumas exatas versões de alguns pacotes.
 
 ```bash
 $ pip3.6 install opencv-python==3.4.2.16
