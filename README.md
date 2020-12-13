@@ -11,7 +11,7 @@ Este repositório foi criado com o intuito de realizar uma nova implementação 
   - [Dependências](#dependências)
     - [SIFT](#sift)
   - [Executando os algoritmos](#executando-os-algoritmos)
-  - [Incluindo suas próprias imagens](incluindo-suas-próprias-imagens)
+  - [Incluindo suas próprias imagens](#incluindo-suas-próprias-imagens)
 - [Autores](#autores)
 - [Conhecimentos](#conhecimentos)
   - [Livros](#livros)
