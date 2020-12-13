@@ -64,11 +64,9 @@ def highlightPixels(A, B, mapA, mapB, gvA, gvB, limit):
 
 def highlightPixelsRGB(A, B, mapA, mapB, pixelsA, pixelsB, limit):
     colorIt = []
-    # C = Image.new('RGB', (200,200))
     C = Image.open(B.filename)
     size = len(mapB)
     for i in range(size):
-        # print(selectedPixels2[i])
         mean = (pixelsA[mapA[i][1]][0] + pixelsA[mapA[i][1]][1] +pixelsA[mapA[i][1]][2] / 3)
         mean2 = (pixelsB[mapB[i][1]][0] + pixelsB[mapB[i][1]][1] +pixelsB[mapB[i][1]][2] / 3)
         if(abs(mean - mean2) < limit ):
