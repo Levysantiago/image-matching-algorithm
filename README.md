@@ -11,6 +11,7 @@ Este repositório foi criado com o intuito de realizar uma nova implementação 
   - [Dependências](#dependências)
     - [SIFT](#sift)
   - [Executando os algoritmos](#executando-os-algoritmos)
+  - [Incluindo suas próprias imagens](incluindo-suas-próprias-imagens)
 - [Autores](#autores)
 - [Conhecimentos](#conhecimentos)
   - [Livros](#livros)
@@ -101,6 +102,25 @@ $ python3.6 main.py
 ```
 
 Ao rodar o algoritmo, ele irá ridar as três implementações e gerar os resultados das correlações em imagens na pasta `tests`, também irá gerar um gráfico comparativo na pasta `graph/` em relação ao tempo de execução que cada algoritmo levou para resolver o problema.
+
+### Incluindo suas próprias imagens
+
+Para utilizar os algoritmos com outras imagens de teste, primeiramente você deve incluir as imagens na pasta `assets`. Depois é só abrir o arquivo `main.py` e incluir os nomes das imagens nas seguintes linhas:
+
+```python
+[...]
+srcImages = [
+    ('mundi.jpg', 'mundi2.jpg'),
+    ('cube.jpg', 'cube2.jpg'),
+    ('many.jpg', 'many2.jpg'),
+    ('apple.jpg', 'apple2.jpg'),
+    ('appleCima.jpg', 'appleCima2.jpg'),
+    ('novaImagem.jpg', 'novaImagem2.jpg'), #Novas imagens incluídas
+    ]
+[...]
+```
+
+Lembrando que as imagens precisam ser de mesmo tamanho e que devem ser quadradas para que todos os algoritmos rodem bem. Também a sagunda imagem deve ser uma transformação geométrica da segunda, isto é, o mesmo objeto em um ângulo diferente ou deslocado na imagem. Depois só rodar o algoritmo com `python3.6 main.py`.
 
 ## Autores
 
