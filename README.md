@@ -120,7 +120,7 @@ srcImages = [
 [...]
 ```
 
-Lembrando que as imagens precisam ser de mesmo tamanho e que devem ser quadradas para que todos os algoritmos rodem bem. Também a sagunda imagem deve ser uma transformação geométrica da segunda, isto é, o mesmo objeto em um ângulo diferente ou deslocado na imagem. Depois só rodar o algoritmo com `python3.6 main.py`.
+Lembrando que as imagens precisam ser de mesmo tamanho e que devem ser quadradas para que todos os algoritmos rodem bem. Também a segunda imagem deve ser uma transformação geométrica da primeira, isto é, o mesmo objeto em um ângulo diferente ou deslocado na imagem. Depois só rodar o algoritmo com `python3.6 main.py`.
 
 ## Autores
 
