@@ -1,6 +1,6 @@
 # Implementação do problema _Image Matching_
 
-Este repositório foi criado com o intuito de realizar uma nova implementação para resolver o problema do _Image Matching_, um problema NP-Completo. Abaixo é apresentado um breve resumo do que é o problema em si, para informações mais aprofundadas, verificar o [docs/RelatorioParcial.pdf](https://github.com/Levysantiago/image-matching-algorithm/tree/master/docs/RelatorioParcial.pdf) e [docs/RelatorioFinal.pdf](https://github.com/Levysantiago/image-matching-algorithm/tree/master/docs/RelatorioFinal.pdf)..
+Este repositório foi criado com o intuito de realizar uma nova implementação para resolver o problema do _Image Matching_, um problema NP-Completo. Abaixo é apresentado um breve resumo do que é o problema em si, para informações mais aprofundadas, verificar o [docs/RelatorioParcial.pdf](https://github.com/Levysantiago/image-matching-algorithm/tree/master/docs/RelatorioParcial.pdf) e [docs/RelatorioFinal.pdf](https://github.com/Levysantiago/image-matching-algorithm/tree/master/docs/RelatorioFinal.pdf).
 
 ## Sumário
 
