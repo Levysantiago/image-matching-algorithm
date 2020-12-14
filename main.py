@@ -61,9 +61,9 @@ for i in srcImages:
     testCount += 1
     values.append("T"+str(testCount))
 
-print(values)
-print(lr2m_times)
-print(lr2mRGB_times)
-print(SIFT_times)
+# print(values)
+# print(lr2m_times)
+# print(lr2mRGB_times)
+# print(SIFT_times)
 
 plot.plot_graph(lr2m_times, lr2mRGB_times, SIFT_times, len(lr2m_times))
