@@ -103,7 +103,7 @@ ou
 $ python3.6 main.py
 ```
 
-Ao rodar o algoritmo, ele irá ridar as três implementações e gerar os resultados das correlações em imagens na pasta `tests`, também irá gerar um gráfico comparativo na pasta `graph/` em relação ao tempo de execução que cada algoritmo levou para resolver o problema.
+Ao rodar o algoritmo, ele irá rodar as três implementações e gerar os resultados das correlações em imagens na pasta `tests`, também irá gerar um gráfico comparativo na pasta `graph/` em relação ao tempo de execução que cada algoritmo levou para resolver o problema.
 
 ### Incluindo suas próprias imagens
 
